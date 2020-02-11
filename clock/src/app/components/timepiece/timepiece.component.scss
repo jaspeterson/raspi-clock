@@ -1,0 +1,28 @@
+.timepiece-card {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  align-content: center;
+  margin: 0;
+  padding-top: 25%;
+  color: white;
+  background-color: #11104c;
+  border-radius: 0;
+}
+
+.timepiece-body {
+  height: 100%;
+  width: 100%;
+  align-content: center;
+}
+
+.timepiece-time {
+  font-size: 124px;
+  text-align: center;
+  padding-bottom: 20vh;
+}
+
+.timepiece-date {
+  font-size: 48px;
+  text-align: center;
+}

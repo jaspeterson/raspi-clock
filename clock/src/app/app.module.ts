@@ -1,24 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MainFaceComponent } from './components/main-face/main-face.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TimepieceComponent } from './components/timepiece/timepiece.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { MainFaceComponent } from "./components/main-face/main-face.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { TimepieceComponent } from "./components/timepiece/timepiece.component";
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainFaceComponent,
-    TimepieceComponent
-  ],
+  declarations: [AppComponent, MainFaceComponent, TimepieceComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

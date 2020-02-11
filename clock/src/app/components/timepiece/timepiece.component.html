@@ -1,1 +1,6 @@
-<p>timepiece works!</p>
+<mat-card class="timepiece-card">
+  <mat-card-content class="timepiece-body">
+    <div class="timepiece-time">{{ time | date: "h:mm" }}</div>
+    <div class="timepiece-date">{{ time | date: "EEEE, MMM dd" }}</div>
+  </mat-card-content>
+</mat-card>
