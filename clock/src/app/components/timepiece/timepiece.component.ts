@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-timepiece",
@@ -7,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class TimepieceComponent implements OnInit {
   time: Date = new Date();
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.updateTime();

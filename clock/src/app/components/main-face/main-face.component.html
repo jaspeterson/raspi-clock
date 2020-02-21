@@ -1,1 +1,14 @@
-<app-timepiece></app-timepiece>
+<div class="time-wrapper">
+  <app-timepiece></app-timepiece>
+</div>
+<mat-toolbar class="footer">
+  <mat-toolbar-row class="footer-row">
+    <span class="footer-spacer-left"></span>
+    <button mat-icon-button class="button-option" (click)="timerFace()">
+      <mat-icon svgIcon="timer-icon" [inline]="true"></mat-icon>
+    </button>
+    <button mat-icon-button class="button-option" (click)="alarmFace()">
+      <mat-icon svgIcon="alarm-icon" [inline]="true"></mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
